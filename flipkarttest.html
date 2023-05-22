@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/280c326eb5.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,29 +12,255 @@
         padding: 0;
        }
        #screen{
-            border: 1px solid red;
+            /* border: 1px solid red; */
             width: 100%;
-            height: 600px;
+            /* height: 600px; */
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
         }
         #screen>div:nth-child(1){
             width: 100%;
-            height: 50px;
-            border: 1px solid black;
+            height: 60px;
+            /* border: 1px solid black; */
             background-color: rgb(40,116,240);
+            color: white;
+            display: flex;
+            justify-content: space-between;
         }
+        #screen>div:nth-child(1)>div:nth-child(1){
+            margin-left: 150px;
+            margin-top: 3px;
+        }
+        #screen>div:nth-child(1)>div:nth-child(2){
+            width: 30%;
+            height: 35px;
+            /* border: 1px solid yellow; */
+            margin-top: 7px;
+            display: flex;
+        }
+        #screen>div:nth-child(1)>div:nth-child(2)>input{
+            width: 90%;
+            height: 100%;
+            border: none;
+           
+            
+        }
+        #screen>div:nth-child(1)>div:nth-child(2)>button{
+            width: 10%;
+            height: 100%;
+            background-color: white;
+            border: none;
+           
+            
+        }
+        #screen>div:nth-child(1)>div:nth-child(3){
+            width: 100px;
+            height: 30px;
+           /* border: 1px solid yellow; */
+           margin-top: 10px;
+            
+        }
+        #screen>div:nth-child(1)>div:nth-child(3)>button{
+            width: 100%;
+            height: 30px;
+           /* border: 1px solid yellow ;   */
+           border: none;
+           background-color: white;
+           color: #095cec;
+            
+        }
+        #screen>div:nth-child(1)>div:nth-child(4){
+           display: flex; 
+           justify-content: space-around;
+           width: 15%;
+           margin-top: 10px;
+            
+        }
+        #screen>div:nth-child(1)>div:nth-child(5){
+           width: 5%;
+           margin-top: 10px;
+           margin-right: 150px;
+            
+        }
+        #screen>div:nth-child(2){
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            color:rgb(78, 78, 78) ;
+            margin-top: 7px;
+        }
+       #screen>div:nth-child(3){
+        display: flex;
+        width: 100%;
+            /* border: 2px solid red; */
+            justify-content: space-around;
+       }
+        #screen>div:nth-child(3)>div:nth-child(1)>{
+            width: 30%;
+        }
+       
+        #screen>div:nth-child(3)>div:nth-child(1)>div{
+            margin-left: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgb(78, 78, 78) ;
+            line-height: 40px;
+            
+        }
+        #screen>div:nth-child(3)>div:nth-child(2){
+            border: 1px solid black;
+            /* height: 500px; */
+            width: 80%;
+            margin-left: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+      #screen>div:nth-child(3)>div:nth-child(2)>div>img{
+        width: 50%;
+        justify-content: space-between;
+        
+      }
+   
+      #screen>div:nth-child(3)>div:nth-child(2)>div{
+       margin-top: 10px;
+       margin-left: 20px;
+        
+      }
+      @media screen and (max-width=400px){
+        #screen>div:nth-child(1)>div:nth-child(3){
+        
+
+        }
+      }
+   
+
     </style>
 </head>
 <body>
     <div id="screen">
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="navbar">
+            <div>
+                <h2><em>Flipkart</em></h2>
+                <p><em>Explore Plus</em></p>
+            </div>
+            <div>
+                <input  placeholder="search for products,brands and more"/>
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #095cec;"></i>
+                </button>
+                </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+            <div>
+                <p><b>Become a seller</b></p>
+                <p><b>More</b></p>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                <label><b>Cart</b></label>
+
+            </div>
         </div>
-        <div>navbar2</div>
-        <div>body</div>
+        <div class="navbar2">
+            <p><b>Electronics</b></p>
+            <p><b>TVs & Appliances</b></p>
+            <p><b>Men</b></p>
+            <p><b>Women</b></p>
+            <p><b>Baby & Kids</b></p>
+            <p><b>Home & Furniture</b></p>
+            <p><b>Sports,Books & More</b></p>
+            <p><b>Flights</b></p>
+            <p><b>Offers Zone</b></p>
+        </div>
+        <div class="body">
+            <div class="left-body">
+                <div>
+                <h3>Filters</h3>
+                </div>
+                <div>
+                    <h4>CATEGORIES</h4>
+                    <ul>
+                        <li>Clothing & Accesories</li>
+                        <li>Top Wear</li>
+                        <li>Tops</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>GENDER</h4>
+                    <input type="checkbox"/>
+                    <label>Women</label><br>
+                    <input type="checkbox"/>
+                    <label>Men</label>
+                </div>
+                <div>
+                    <h4>DISCOUNT</h4>
+                    <input type="checkbox"/>
+                    <label>30% and more</label><br>
+                    <input type="checkbox"/>
+                    <label>40% and more</label><br>
+                    <input type="checkbox"/>
+                    <label>50% and more</label><br>
+                    <input type="checkbox"/>
+                    <label>60% and more</label><br>
+                    <input type="checkbox"/>
+                    <label>70% and more</label>
+                </div>
+
+            </div>
+            <div id="products" class="right-body" >
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+                <div>
+                    <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/top/n/t/j/xs-tp076b-fuoko-original-imagz9hfceegyd7t.jpeg?q=70"/>
+                    <h4>Fuoko</h4>
+                    <p>Sleeveless</p>
+                    <h4>300Rs</h4>
+                </div>
+               
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
